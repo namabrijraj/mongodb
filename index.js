@@ -29,10 +29,13 @@ async function createCourse(){
 }
 async function getCourse(){  
     const course = await Course
+    //.find({author:/^na/i}) start
+    //.find({author:/ti$/i}) // end
+    .find({author:/.*am.*/i}) // contain
                     //.find({isPublish:false,author:'NAMA'})
                     //.find().limit(1)
                     //.find().limit(5).sort({name:-1}).select({name:1,tags:1})
-                    .find().or([{author:'NAMA'},{isPulish:true}]).limit(5).sort({name:-1})
+                    //.find().or([{author:'NAMA'},{isPulish:true}]).limit(5).sort({name:-1})
     console.log(course)
 }
 
