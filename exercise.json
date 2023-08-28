@@ -1,0 +1,37 @@
+[
+	{
+		"nama": "Node",
+		"author": "Damayanti",
+		"tags":['frontend','backend'],
+		"isPublish":true,
+		"price":25
+	},
+	{
+		"nama": "Express",
+		"author": "NAMA",
+		"tags":['frontend','backend'],
+		"isPublish":true,
+		"price":30
+	},
+	{
+		"nama": "PHP",
+		"author": "Damayanti",
+		"tags":['frontend','backend'],
+		"isPublish":true,
+		"price":35
+	},
+	{
+		"nama": "React",
+		"author": "NAMA",
+		"tags":['frontend'],
+		"isPublish":true,
+		"price":45
+	},
+	{
+		"nama": "Javascript",
+		"author": "Damayanti",
+		"tags":['frontend','backend'],
+		"isPublish":true,
+		"price":25
+	}
+]
