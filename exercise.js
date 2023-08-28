@@ -15,8 +15,12 @@ const courseSchema = new mongoose.Schema({
 const Course = mongoose.model('exercise',courseSchema);
 
 async function getCourse(){
-    const res = await Course.find({isPublish:true,tags:'backend'}).sort('-price').select('name author tags')
+    //const res = await Course.find({isPublish:true,tags:{$in:['frontend','backend']}})
+    const res = await Course.find({isPublish:true})
+.or([{price:{$gt:95}},{author:/.*NA.*/i}])
 
+    // .or([{tags:'frontend'},{tags:'backend'}])
+    .sort('-price').select('name author tags price')
     console.log(res);
 }
 
